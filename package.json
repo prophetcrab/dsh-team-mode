@@ -1,6 +1,6 @@
 {
   "name": "dsh-team-mode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Team mode for DeepSeek Harness: an agent preset that declares an effectively unlimited token budget and pushes delegation-first work through many parallel subagents and teammates.",
   "license": "MIT",
   "author": "prophetcrab",
@@ -22,13 +22,17 @@
   },
   "type": "module",
   "exports": {
-    ".": "./index.js"
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
   },
   "files": [
     "index.js",
     "cordis.patch.yml",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "locale/*.json",
+    "icon.svg"
   ],
   "dsh": {
     "bundle": {
