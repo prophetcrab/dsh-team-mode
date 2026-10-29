@@ -1,7 +1,7 @@
 {
   "name": "dsh-team-mode",
-  "version": "0.1.1",
-  "description": "Team mode for DeepSeek Harness: an agent preset that declares an effectively unlimited token budget and pushes delegation-first work through many parallel subagents and teammates.",
+  "version": "0.2.0",
+  "description": "Wish mode for DeepSeek Harness: an agent preset that declares an effectively unlimited token budget, pushes the whole toolset and outside resources at the job, and asks for a crafted, original result.",
   "license": "MIT",
   "author": "prophetcrab",
   "homepage": "https://github.com/prophetcrab/dsh-team-mode#readme",
@@ -13,9 +13,10 @@
     "dsh",
     "dsh-plugin",
     "agent-preset",
-    "team",
+    "wish",
     "delegation",
-    "subagent"
+    "subagent",
+    "creativity"
   ],
   "engines": {
     "dsh": ">=0.2.1-rc.2 <0.3.0"

@@ -1,14 +1,15 @@
-# Team mode: an agent preset that declares an effectively unlimited token budget
-# and pushes delegation-first work - many parallel subagents and teammates
-# instead of serial work. Applied after the web-app bundle, so it reuses the
-# shipped standard composition and adds one prompt plugin on top.
+# Wish mode: an agent preset that declares an effectively unlimited token budget,
+# pushes the whole toolset and outside resources at the job, and asks for a
+# crafted, original result rather than the generic default. Applied after the
+# web-app bundle, so it reuses the shipped standard composition and adds one
+# prompt plugin on top.
 - insert:
     - id: preset-team
       name: '@deepseek-ai/dsh-agent-preset'
       config:
         id: team
-        name: 团队模式
-        description: 预算不设上限，尽量把任务拆成大量子代理/队友并行执行，而不是自己串行做完。
+        name: 许愿模式
+        description: 预算不设上限，尽用手里的工具与外部资源，拆成大量子代理并行推进，并给出有想法、有质感的交付。
         order: 60
         plugins:
           - id: persona
